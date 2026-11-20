@@ -1,0 +1,19 @@
+# Android / Gradle
+local.properties
+build/
+.gradle/
+.idea/
+*.iml
+captures/
+*.keystore
+*.jks
+.externalNativeBuild/
+.cxx/
+app/release/
+
+# Website (Hugo): build output, downloaded tools/theme
+site/public/
+site/resources/
+site/.tools/
+site/themes/
+.hugo_build.lock

@@ -1,0 +1,4 @@
+{{- /* GitHub URL of the project: {{< gh >}} = repo, {{< gh "releases" >}} = repo/releases, ... Owner/repo come from [params.panelo] in hugo.toml. */ -}}
+{{- $p := site.Params.panelo -}}
+{{- $base := printf "https://github.com/%s/%s" $p.owner $p.repo -}}
+{{- with .Get 0 }}{{ printf "%s/%s" $base . }}{{ else }}{{ $base }}{{ end -}}

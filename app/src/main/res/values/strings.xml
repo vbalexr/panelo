@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Panelo</string>
+    <string name="offline_saved">Offline — showing saved version from %1$s ·</string>
+    <string name="cant_reach">Can\'t reach the site</string>
+    <string name="retry">Retry</string>
+    <plurals name="pin_attempts_left">
+        <item quantity="one">Wrong PIN (%1$d attempt left)</item>
+        <item quantity="other">Wrong PIN (%1$d attempts left)</item>
+    </plurals>
+    <plurals name="log_last_lines">
+        <item quantity="one">Log (last %1$d line)</item>
+        <item quantity="other">Log (last %1$d lines)</item>
+    </plurals>
+</resources>

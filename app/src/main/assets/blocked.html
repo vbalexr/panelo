@@ -1,0 +1,11 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panelo</title>
+<style>html,body{height:100%;margin:0;background:#111;color:#eee;font-family:sans-serif}
+body{display:flex;align-items:center;justify-content:center;text-align:center;font-size:22px;padding:24px}
+code{background:#333;padding:2px 8px;border-radius:4px}</style>
+</head><body><div><h1>Blocked</h1>
+<p><code id="h">this site</code> isn't in the allowed sites.</p>
+<p>Open settings (swipe from the right edge) and add it to Allowed hosts.</p></div>
+<script>var m=/[?&]host=([^&]*)/.exec(location.search);if(m)document.getElementById('h').textContent=decodeURIComponent(m[1]);</script>
+</body></html>

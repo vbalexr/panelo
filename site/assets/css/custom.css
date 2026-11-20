@@ -1,0 +1,44 @@
+/* Panelo brand: teal #0F766E (light) / #14B8A6 (dark) */
+:root { --primary-hue: 175deg; --primary-saturation: 77%; --primary-lightness: 28%; }
+.dark { --primary-hue: 173deg; --primary-saturation: 80%; --primary-lightness: 40%; }
+
+/* Device-like frame for screenshots */
+.device { margin: 0; padding: 10px; border-radius: 22px; background: #0f172a;
+  box-shadow: 0 20px 50px -20px rgba(15,118,110,.45), 0 2px 6px rgba(0,0,0,.25);
+  border: 1px solid rgba(20,184,166,.35); }
+.device img { display: block; width: 100%; height: auto; border-radius: 12px; margin: 0; }
+.device figcaption { color: #cbd5e1; font-size: .85rem; text-align: center; padding: 10px 6px 2px; }
+.panelo-hero-shot { max-width: 52rem; width: 100%; margin-inline: auto; }
+.panelo-shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1.5rem; margin: 1.5rem 0 .5rem; }
+.panelo-note { font-size: .8rem; opacity: .7; text-align: center; }
+
+/* Hero background glow */
+.hextra-home-glow, main#content > div > .panelo-hero-shot { position: relative; }
+main#content { background: radial-gradient(60rem 28rem at 50% -4rem, rgba(20,184,166,.16), transparent 70%); }
+
+/* Download cards */
+.panelo-download { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; margin: 1.5rem 0; width: 100%; }
+.panelo-dl-card { display: flex; flex-direction: column; gap: .35rem; padding: 1.25rem 1.5rem; border-radius: 1.25rem;
+  border: 1px solid rgba(100,116,139,.35); text-decoration: none !important; color: inherit; }
+.panelo-dl-card strong { font-size: 1.15rem; }
+.panelo-dl-card span { opacity: .8; font-size: .92rem; }
+.panelo-dl-card.primary { background: #0F766E; color: #fff; border-color: #0F766E; transition: background .15s; }
+.panelo-dl-card.primary:hover { background: #115e59; }
+.panelo-dl-card.soon { opacity: .75; border-style: dashed; }
+.dark .panelo-dl-card.primary { background: #14B8A6; color: #042f2e; border-color: #14B8A6; }
+.dark .panelo-dl-card.primary:hover { background: #2dd4bf; }
+
+/* Landing page layout (home only: detected by the hero screenshot) */
+body:has(.panelo-hero-shot) main#content > div { align-items: center; text-align: center; max-width: 72rem; margin-inline: auto; }
+body:has(.panelo-hero-shot) main#content > div > div:has(.hextra-feature-card),
+body:has(.panelo-hero-shot) .hextra-feature-card,
+body:has(.panelo-hero-shot) .panelo-dl-card { text-align: left; }
+body:has(.panelo-hero-shot) main#content h2 { font-size: 2rem; font-weight: 700; letter-spacing: -.02em; margin: 4rem 0 1.5rem; }
+body:has(.panelo-hero-shot) main#content > div > div:first-child { display: flex; justify-content: center; }
+body:has(.panelo-hero-shot) main#content p { max-width: 42rem; }
+body:has(.panelo-hero-shot) main#content a:not(.hx\:inline-block):not(.panelo-dl-card):not(.hextra-feature-card) { color: #0F766E; text-decoration: underline; text-underline-offset: 3px; }
+.dark body:has(.panelo-hero-shot) main#content a:not(.hx\:inline-block):not(.panelo-dl-card):not(.hextra-feature-card),
+html.dark body:has(.panelo-hero-shot) main#content a:not(.hx\:inline-block):not(.panelo-dl-card):not(.hextra-feature-card) { color: #2DD4BF; }
+body:has(.panelo-hero-shot) .panelo-download, body:has(.panelo-hero-shot) .hextra-feature-grid { width: 100%; }
+body:has(.panelo-hero-shot) h1, body:has(.panelo-hero-shot) main#content .hx\:flex-wrap { justify-content: center; }
+.panelo-home-btns{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
