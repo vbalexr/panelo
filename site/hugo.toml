@@ -1,9 +1,9 @@
 # Panelo documentation site (Hugo + Hextra theme). Hugo project root = site/.
 #
 # >>> PLACEHOLDERS TO REPLACE once the repository exists: <<<
-#   1. baseURL below (OWNER, and drop the path part if you use a custom domain)
+#   1. baseURL below (drop the path part if you use a custom domain)
 #   2. [params.panelo] owner / repo below (used for every GitHub link on the site)
-baseURL = "https://OWNER.github.io/panelo/"
+baseURL = "https://vbalexr.github.io/panelo/"
 title = "Panelo"
 locale = "en"
 defaultContentLanguage = "en"
@@ -16,7 +16,7 @@ refLinksErrorLevel = "ERROR"
 refLinksNotFoundURL = ""
 
 [params.panelo]
-  owner = "OWNER"
+  owner = "vbalexr"
   repo = "panelo"
 
 [markup]
@@ -89,7 +89,7 @@ refLinksNotFoundURL = ""
   [[menu.main]]
     name = "GitHub"
     weight = 6
-    url = "https://github.com/OWNER/panelo"
+    url = "https://github.com/vbalexr/panelo"
     [menu.main.params]
       icon = "github"
 

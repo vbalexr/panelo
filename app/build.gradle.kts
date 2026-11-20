@@ -54,8 +54,7 @@ android {
         targetSdk = 36
         versionCode = 1
         versionName = "0.1.0"
-        // TODO: set to the real repository URL
-        buildConfigField("String", "PRIVACY_URL", "\"https://github.com/OWNER/panelo/blob/main/PRIVACY.md\"")
+        buildConfigField("String", "PRIVACY_URL", "\"https://vbalexr.github.io/panelo/privacy/\"")
     }
 
     buildTypes {

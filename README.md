@@ -72,4 +72,4 @@ The **Panelo name and logo are not covered by the license**. Forks must use a di
 
 ## Website
 
-Documentation: https://OWNER.github.io/panelo/ (built from [`site/`](site/) and `docs/`).
+Documentation: https://vbalexr.github.io/panelo/ (built from [`site/`](site/) and `docs/`).
