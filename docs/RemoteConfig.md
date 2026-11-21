@@ -69,7 +69,7 @@ All names are exactly as in `KioskConfig`. Defaults apply when neither the devic
 | `startUrl` | string | http(s) URL or empty | empty | Page the kiosk shows. May be changed remotely. |
 | `allowedHosts` | string[] | non-blank hosts | `[]` | Hosts the web app may navigate to; empty = start URL host and its subdomains. |
 | `blockExternal` | bool | | true | Block navigation to other hosts. |
-| `pageZoom` | int | 50..200 | 100 | CSS page zoom in percent. |
+| `pageZoom` | int | 50..200 | 100 | Page zoom in percent (scales the viewport, so full-height pages still fill the screen). |
 | `textZoom` | int | 50..300 | 100 | WebView text zoom in percent. |
 | `pinchZoom` | bool | | false | Allow pinch zoom. |
 | `autoplay` | bool | | true | Media plays without a tap. |
